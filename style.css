@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+
+
+:root{
+    --green : #0eb582;
+    --light-green : #f0fdfa;
+    --light-color : #777;
+    --light-white : #eee;
+    --black : #444;
+    --white : #fff;
+    --border : .1rem solid var(--green);
+    --box-shadow : 0 .5rem 1rem rgba(0,0,0,1)
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--green);
+}
+.btn{
+    padding: 1rem 2rem;
+    background: #fff;
+    color: var(--green);
+    border: var(--border);
+    font-size: 2rem;
+    border-radius: .5rem;
+}
+.btn:hover{
+    background: var(--green);
+    color: white;
+}
+
+section{
+    min-height: 100vh;
+    width: 100%;
+    padding: 2rem 9%;
+}
+
+/*header style start*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 2rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+}
+.header .logo{
+    color: var(--black);
+    font-size: 3rem;
+}
+
+.header .logo i{
+    color: var(--green);
+}
+.header .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .navbar a{
+    font-size: 2rem;
+    color: var(--black);
+    padding-right: 2rem;
+}
+.header .navbar a:hover{
+    color: var(--green);
+}
+.header .icons #account-btn{
+    font-size: 3rem;
+    color: var(--black);
+    cursor: pointer;
+
+}
+.header .icons #account-btn:hover{
+    color: var(--green);
+}
+.header .icons #menu-btn{
+    font-size: 3rem;
+    color: var(--black);
+    cursor: pointer;
+    display: none;
+
+}
+.header .icons #menu-btn:hover{
+    color: var(--green);
+}
+/*header style end*/
+
+
+
+
+@media (max-width:768px) {
+    html{
+        font-size: 55%;
+    }
+
+    .header .wrapper .navbar{
+        position: fixed;
+        top: 8.2rem;
+        right: -105%;
+        width: 30rem;
+        height: 100%;
+        text-align: center;
+        border: var(--border);
+        background: white;
+        box-shadow: var(--box-shadow);
+        
+
+    }
+    .header .wrapper .navbar a{
+        display: block;
+        padding: 2rem 0;
+        font-size: 3rem;
+        
+    }
+    .header .wrapper .navbar a:hover{
+        background: green;
+        ;
+    }
+    .header .wrapper .icons #account-btn{
+        padding-right: 2rem;
+    }
+    .header .wrapper .icons #menu-btn{
+        display: inline-block;
+       
+        
+    }
+    
+    .fa-times{
+        transform: rotate(90deg);
+    }
+    .header .navbar.popup{
+        right: 0;
+    }
+}
