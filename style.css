@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
 
+.swiper-pagination-bullet-active{
+    background : var(--green)
 
+}
 :root{
     --green : #0eb582;
     --light-green : #f0fdfa;
@@ -213,6 +216,32 @@ section{
 }
 
 /*Account style end*/
+/*home style start*/
+.home{
+    padding: 0;
+
+}
+.home .slide{
+    display: flex;
+    align-items: center;
+    background-size: cover !important;
+    background-position : center !important;
+    height: 60rem;
+}
+.home .slide .content{
+    width: 60rem;
+}
+.home .slide .content h3{
+    font-size: 6rem;
+    color: #fff;
+}
+.home .slide .content p{
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 3rem 0;
+}
+
+/*home style end*/
 /*Footer style start*/
 .footer{
     padding-top: 200px;
