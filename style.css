@@ -115,6 +115,7 @@ section{
     color: var(--green);
 }
 /*header style end*/
+/*Account style start*/
 
 .account-form{
     padding: 2rem;
@@ -210,6 +211,77 @@ section{
 
     margin-top: 2rem;
 }
+
+/*Account style end*/
+/*Footer style start*/
+.footer{
+    padding-top: 200px;
+    min-height: 50vh;
+    background: var(--light-green);
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
+    gap:2rem;
+    border-bottom: .2rem solid var(--green);
+    padding-bottom: 3rem;
+
+}
+.footer .box-container .box{
+    
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-flow: column;
+    gap: 3rem;
+}
+.footer .box-container .box h3{
+    font-size: 2rem;
+}
+.footer .box-container .box a{
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+.footer .box-container .box a:hover{
+    color: var(--green);
+}
+.footer .box-container .box p{
+    font-size: 1.5rem;
+}
+.footer .box-container .box .logo{
+    font-size: 2rem;
+}
+
+.footer .box-container .box .logo i{
+    color: var(--green);
+}
+.footer .box-container .box .icons a{
+    font-size: 2rem;
+    color: white;
+    background: var(--green);
+    padding: 1.5rem;
+    border-radius: .5rem;
+    margin-right: 2rem;
+
+
+}
+
+.footer .box-container .box input{
+    padding: 1.5rem 3rem;
+    border: var(--border);
+    width: 100%;
+    background: white;
+}
+.footer .credit{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+.footer .credit span{
+    color: var(--green);
+}
+/*Footer style end*/
+
 
 
 @media (max-width:768px) {
