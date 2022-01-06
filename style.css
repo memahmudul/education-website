@@ -276,6 +276,46 @@ section{
 }
 
 /****************************home-subject style end****************************/
+/****************************home-course style start****************************/
+.course{
+    min-height: 45vh;
+}
+.course .slide{
+    text-align: center;
+    position: relative;
+    width: 30rem;
+    overflow : hidden;
+}
+.course .slide .image{
+    padding: 2rem;
+}
+.course .slide .image img{
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+.course .slide .image h3{
+    font-size: 2rem;
+}
+.course .slide .content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--green);
+    padding: 2rem;
+    bottom: -100%;
+}
+.course .slide .content h3{
+    font-size: 2rem;
+}
+.course .slide .content p{
+    font-size: 1.5rem;
+    padding: 2rem 0;
+}
+.course .slide:hover .content{
+    bottom: 0;
+}
+/****************************home-course style end****************************/
 /*Footer style start*/
 .footer{
     padding-top: 200px;

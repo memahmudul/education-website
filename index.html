@@ -1,175 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Home</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--Header Section Start-->
     <header class="header">
-        <a href="" class="logo"><i class="fas fa-lightbulb"></i> educa</a>
-       <div class="wrapper">
+      <a href="" class="logo"><i class="fas fa-lightbulb"></i> educa</a>
+      <div class="wrapper">
         <nav class="navbar">
-            <a href="/index.html">home</a>
-            <a href="/about.html">about</a>
-            <a href="/courses.html">courses</a>
-            <a href="/contact.html">contact</a> 
+          <a href="/index.html">home</a>
+          <a href="/about.html">about</a>
+          <a href="/courses.html">courses</a>
+          <a href="/contact.html">contact</a>
         </nav>
         <div class="icons">
-            <div id="account-btn" class="fas fa-user"></div>
-            <div id="menu-btn" class="fas fa-bars"></div>
+          <div id="account-btn" class="fas fa-user"></div>
+          <div id="menu-btn" class="fas fa-bars"></div>
         </div>
-       </div>
-        
+      </div>
     </header>
     <!--Header Section End-->
 
     <!--Account Form Section Start-->
     <div class="account-form">
-        <div id="close-form" class="fas fa-times"></div>
-        <div class="buttons">
-            <span class="btn active login-btn">login</span> <!--used span as button to avoid a javascript error-->
-            <span class="btn register-btn">register</span>
-            
+      <div id="close-form" class="fas fa-times"></div>
+      <div class="buttons">
+        <span class="btn active login-btn">login</span>
+        <!--used span as button to avoid a javascript error-->
+        <span class="btn register-btn">register</span>
+      </div>
+      <form action="" class="login-form active">
+        <h3>login form</h3>
+        <input type="email" placeholder="enter your email" class="box" />
+        <input type="password" placeholder="enter your password" class="box" />
+        <div class="flex">
+          <input type="checkbox" id="remember-me" />
+          <label for="remember-me">remember me</label>
+          <a href="">forget password?</a>
         </div>
-        <form action="" class="login-form active">
-            <h3>login form</h3>
-            <input type="email" placeholder="enter your email" class="box">
-            <input type="password" placeholder="enter your password" class="box">
-            <div class="flex">
-                <input type="checkbox" id="remember-me">
-                <label for="remember-me">remember me</label>
-                <a href="">forget password?</a>
+        <input type="submit" class="btn submit-btn" value="login now" />
+      </form>
+      <form action="" class="register-form">
+        <h3>Register form</h3>
+        <input type="email" placeholder="enter your email" class="box" />
+        <input type="password" placeholder="enter your password" class="box" />
 
-            </div>
-            <input type="submit" class="btn submit-btn" value="login now">
-        </form>
-        <form action="" class="register-form">
-            <h3>Register form</h3>
-            <input type="email" placeholder="enter your email" class="box">
-            <input type="password" placeholder="enter your password" class="box">
-
-            <input type="submit" class="btn submit-btn" value="Register now">
-        </form>
+        <input type="submit" class="btn submit-btn" value="Register now" />
+      </form>
     </div>
     <!--Account Form Section End-->
     <!--Home Section Start-->
     <section class="home">
-        <div class="swiper home-slider">
-           <div class="swiper-wrapper">
-            <section class="swiper-slide slide" style="background: url(images/home-slide-1.jpg) no-repeat;">
-                <div class="content">
-                    <h3>the best courses you'll find here!</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim laudantium blanditiis ullam voluptates sunt quaerat eveniet consequuntur vero temporibus.</p>
-                    <a href="" class="btn">Get started</a>
-                </div>
-                
-            </section>
-            <section class="swiper-slide slide" style="background: url(images/home-slide-2.jpg) no-repeat;">
-                <div class="content">
-                    <h3>the best courses you'll find here!</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim laudantium blanditiis ullam voluptates sunt quaerat eveniet consequuntur vero temporibus.</p>
-                    <a href="" class="btn">Get started</a>
-                </div>
-                
-            </section>
-            <section class="swiper-slide slide" style="background: url(images/home-slide-3.jpg) no-repeat;">
-                <div class="content">
-                    <h3>the best courses you'll find here!</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim laudantium blanditiis ullam voluptates sunt quaerat eveniet consequuntur vero temporibus.</p>
-                    <a href="" class="btn">Get started</a>
-                </div>
-                
-            </section>
-           </div>
-           <div class="swiper-pagination"></div>
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <section
+            class="swiper-slide slide"
+            style="background: url(images/home-slide-1.jpg) no-repeat"
+          >
+            <div class="content">
+              <h3>the best courses you'll find here!</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate enim laudantium blanditiis ullam voluptates sunt
+                quaerat eveniet consequuntur vero temporibus.
+              </p>
+              <a href="" class="btn">Get started</a>
+            </div>
+          </section>
+          <section
+            class="swiper-slide slide"
+            style="background: url(images/home-slide-2.jpg) no-repeat"
+          >
+            <div class="content">
+              <h3>the best courses you'll find here!</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate enim laudantium blanditiis ullam voluptates sunt
+                quaerat eveniet consequuntur vero temporibus.
+              </p>
+              <a href="" class="btn">Get started</a>
+            </div>
+          </section>
+          <section
+            class="swiper-slide slide"
+            style="background: url(images/home-slide-3.jpg) no-repeat"
+          >
+            <div class="content">
+              <h3>the best courses you'll find here!</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate enim laudantium blanditiis ullam voluptates sunt
+                quaerat eveniet consequuntur vero temporibus.
+              </p>
+              <a href="" class="btn">Get started</a>
+            </div>
+          </section>
         </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </section>
     <!--Home Section End-->
     <!--Subject section start-->
     <section class="subject">
-        <h1 class="heading">our top subjects</h1>
-        <div class="box-container">
-            <div class="box">
-                <img src="images/subject-icon-1.png" alt="">
-                <h3>graphic Design</h3>
-                <p>12 modules</p>
-            </div>
-            <div class="box">
-                <img src="images/subject-icon-2.png" alt="">
-                <h3>mathematics</h3>
-                <p>12 modules</p>
-            </div>
-            <div class="box">
-                <img src="images/subject-icon-3.png" alt="">
-                <h3>teaching</h3>
-                <p>12 modules</p>
-            </div>
-            <div class="box">
-                <img src="images/subject-icon-4.png" alt="">
-                <h3>web design</h3>
-                <p>12 modules</p>
-            </div>
-            <div class="box">
-                <img src="images/subject-icon-5.png" alt="">
-                <h3>science</h3>
-                <p>12 modules</p>
-            </div>
-            <div class="box">
-                <img src="images/subject-icon-6.png" alt="">
-                <h3>engineering</h3>
-                <p>12 modules</p>
-            </div>
+      <h1 class="heading">our top subjects</h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="images/subject-icon-1.png" alt="" />
+          <h3>graphic Design</h3>
+          <p>12 modules</p>
         </div>
+        <div class="box">
+          <img src="images/subject-icon-2.png" alt="" />
+          <h3>mathematics</h3>
+          <p>12 modules</p>
+        </div>
+        <div class="box">
+          <img src="images/subject-icon-3.png" alt="" />
+          <h3>teaching</h3>
+          <p>12 modules</p>
+        </div>
+        <div class="box">
+          <img src="images/subject-icon-4.png" alt="" />
+          <h3>web design</h3>
+          <p>12 modules</p>
+        </div>
+        <div class="box">
+          <img src="images/subject-icon-5.png" alt="" />
+          <h3>science</h3>
+          <p>12 modules</p>
+        </div>
+        <div class="box">
+          <img src="images/subject-icon-6.png" alt="" />
+          <h3>engineering</h3>
+          <p>12 modules</p>
+        </div>
+      </div>
     </section>
-    <!--Subject section End-->
-    <!--Footer Section Start-->
+    <!---------------------------------Subject section End---------------------------------->
+    <!---------------------------------Course Section Start--------------------------------->
+    <section class="course">
+      <h1 class="heading">our top courses</h1>
+      <div class="swiper course-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/course-1-1.png" alt="" />
+              <h3>web development</h3>
+            </div>
+            <div class="content">
+              <h3>web development</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad,
+                hic!
+              </p>
+              <a href="" class="btn">read more</a>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/course-1-2.png" alt="" />
+              <h3>web development</h3>
+            </div>
+            <div class="content">
+              <h3>web development</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad,
+                hic!
+              </p>
+              <a href="" class="btn">read more</a>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/course-1-3.png" alt="" />
+              <h3>web development</h3>
+            </div>
+            <div class="content">
+              <h3>web development</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad,
+                hic!
+              </p>
+              <a href="" class="btn">read more</a>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/course-1-4.png" alt="" />
+              <h3>web development</h3>
+            </div>
+            <div class="content">
+              <h3>web development</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad,
+                hic!
+              </p>
+              <a href="" class="btn">read more</a>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/course-1-5.png" alt="" />
+              <h3>web development</h3>
+            </div>
+            <div class="content">
+              <h3>web development</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad,
+                hic!
+              </p>
+              <a href="" class="btn">read more</a>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/course-1-6.png" alt="" />
+              <h3>web development</h3>
+            </div>
+            <div class="content">
+              <h3>web development</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad,
+                hic!
+              </p>
+              <a href="" class="btn">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------------------------Course Section End--------------------------------->
+    <!---------------------------------Footer Section Start--------------------------------->
 
     <section class="footer">
-        <div class="box-container">
-            <div class="box">
-                <a href="" class="logo"><i class="fas fa-lightbulb"></i>educa</a>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, sequi!</p>
-                <div class="icons">
-                   <a href=""> <i class="fab fa-facebook"></i></a>
-                 <a href="">   <i class="fab fa-twitter"></i></a>
-                   <a href=""> <i class="fab fa-linkedin"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <h3>quick links</h3>
-                <a href="home.html">home</a>
-                <a href="about.html">about</a>
-                <a href="courses.html">courses</a>
-                <a href="contact.html">contact</a>
-            </div>
-            <div class="box">
-                <h3>useful links</h3>
-                <a href="">help center</a>
-                <a href="">ask questions</a>
-                <a href="">send feedback</a>
-                <a href="">terms of use</a>
-                <a href="">privacy policy</a>
-            </div>
-            <div class="box">
-                <h3>news letter</h3>
-                <p>subscribe for latest updates</p>
-                <input type="email" placeholder="enter your email">
-                <a href="" class="btn">subscribe</a>
-            </div>
+      <div class="box-container">
+        <div class="box">
+          <a href="" class="logo"><i class="fas fa-lightbulb"></i>educa</a>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga,
+            sequi!
+          </p>
+          <div class="icons">
+            <a href=""> <i class="fab fa-facebook"></i></a>
+            <a href=""> <i class="fab fa-twitter"></i></a>
+            <a href=""> <i class="fab fa-linkedin"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
-        <h3 class="credit">created by <span>md.mahmudul hasan</span> | all rights reserved</h3>
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="home.html">home</a>
+          <a href="about.html">about</a>
+          <a href="courses.html">courses</a>
+          <a href="contact.html">contact</a>
+        </div>
+        <div class="box">
+          <h3>useful links</h3>
+          <a href="">help center</a>
+          <a href="">ask questions</a>
+          <a href="">send feedback</a>
+          <a href="">terms of use</a>
+          <a href="">privacy policy</a>
+        </div>
+        <div class="box">
+          <h3>news letter</h3>
+          <p>subscribe for latest updates</p>
+          <input type="email" placeholder="enter your email" />
+          <a href="" class="btn">subscribe</a>
+        </div>
+      </div>
+      <h3 class="credit">
+        created by <span>md.mahmudul hasan</span> | all rights reserved
+      </h3>
     </section>
     <!--Footer Section Start-->
-
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
