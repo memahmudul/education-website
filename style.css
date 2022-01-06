@@ -9,7 +9,7 @@
     --black : #444;
     --white : #fff;
     --border : .1rem solid var(--green);
-    --box-shadow : 0 .5rem 1rem rgba(0,0,0,1)
+    --box-shadow : 0 .5rem 1rem rgba(0,0,0,.3)
 }
 
 *{
@@ -46,6 +46,8 @@ html{
     border: var(--border);
     font-size: 2rem;
     border-radius: .5rem;
+    background: var(--light-green);
+    cursor: pointer;
 }
 .btn:hover{
     background: var(--green);
@@ -114,7 +116,100 @@ section{
 }
 /*header style end*/
 
+.account-form{
+    padding: 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2000;
+    background: #fff;
+    height: 100%;
+    width: 35rem;
+    border: var(--border);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+.account-form.popup{
+    right: -105%;
+}
+.account-form .buttons .btn.active{
+    background: var(--green);
+    color: #fff;
+}
+.account-form #close-form{
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 4rem;
+    cursor: pointer;
+    color: var(--black);
+}
+.account-form #close-form:hover{
+    color: var(--green);
+}
+.account-form form{
+    display: none;
+}
+.account-form form.active{
+    display: block;
+}
 
+.account-form .login-form{
+    border: var(--border);
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+}
+
+.account-form .login-form h3{
+    font-size: 3rem;
+
+}
+.account-form .login-form .box{
+    padding: 1.5rem;
+    border: var(--border);
+    width: 100%;
+    margin: 2rem 0;
+}
+.account-form .login-form .flex{
+    display: flex;
+    
+    align-items: center;
+    font-size: 1.2rem;
+}
+.account-form .login-form .flex a{
+    margin-left: auto;
+}
+.account-form .login-form .submit-btn{
+    width: 100%;
+
+    margin-top: 2rem;
+}
+.account-form .register-form{
+    border: var(--border);
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+}
+
+.account-form .register-form h3{
+    font-size: 3rem;
+
+}
+.account-form .register-form .box{
+    padding: 1.5rem;
+    border: var(--border);
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.account-form .register-form .submit-btn{
+    width: 100%;
+
+    margin-top: 2rem;
+}
 
 
 @media (max-width:768px) {

@@ -28,6 +28,36 @@
     </header>
     <!--Header Section End-->
 
+    <!--Account Form Section Start-->
+    <div class="account-form">
+        <div id="close-form" class="fas fa-times"></div>
+        <div class="buttons">
+            <span class="btn active login-btn">login</span> <!--used span as button to avoid a javascript error-->
+            <span class="btn register-btn">register</span>
+            
+        </div>
+        <form action="" class="login-form active">
+            <h3>login form</h3>
+            <input type="email" placeholder="enter your email" class="box">
+            <input type="password" placeholder="enter your password" class="box">
+            <div class="flex">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">remember me</label>
+                <a href="">forget password?</a>
+
+            </div>
+            <input type="submit" class="btn submit-btn" value="login now">
+        </form>
+        <form action="" class="register-form">
+            <h3>Register form</h3>
+            <input type="email" placeholder="enter your email" class="box">
+            <input type="password" placeholder="enter your password" class="box">
+
+            <input type="submit" class="btn submit-btn" value="Register now">
+        </form>
+    </div>
+    <!--Account Form Section End-->
+
 
 
     <script src="script.js"></script>
