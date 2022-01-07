@@ -40,6 +40,18 @@ loginBtn.onclick = ()=>{
     registerForm.classList.remove('active')
 }
 
+
+const loadMoreBtn = document.querySelector('.load-more .btn')
+const box = document.querySelectorAll('.course .box-container .hide')
+loadMoreBtn.onclick = ()=>{
+    
+    box.forEach(show=>{
+        show.style.display = 'block'
+    });
+    box.style.display='none'
+
+}
+
 var swiper = new Swiper(".home-slider", {
     pagination: {
       el: ".swiper-pagination",
@@ -65,6 +77,49 @@ var swiper = new Swiper(".home-slider", {
         },
         991: {
             slidesPerView : 3,
+            
+        },
+    }
+  });
+
+  var swiper = new Swiper(".teacher-slider", {
+   
+    loop : true,
+    grabCursor : true,
+    spaceBetween : 20,
+    breakpoints:{
+        0: {
+            slidesPerView : 1,
+            
+        },
+        768: {
+            slidesPerView : 2,
+            
+        },
+        991: {
+            slidesPerView : 3,
+            
+        },
+    }
+  });
+
+  var swiper = new Swiper(".review-slider", {
+      
+   
+    loop : true,
+    grabCursor : true,
+    spaceBetween : 20,
+    breakpoints:{
+        0: {
+            slidesPerView : 2,
+            
+        },
+        768: {
+            slidesPerView : 3,
+            
+        },
+        991: {
+            slidesPerView : 4,
             
         },
     }
