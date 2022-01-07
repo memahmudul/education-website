@@ -537,6 +537,74 @@ section{
     text-align: center;
 }
 /****************************course style end********************/
+/****************************contact style start********************/
+.contact .icons-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap:2rem;
+}
+.contact .icons-container .icon{
+    text-align: center;
+    padding: 2rem;
+    background: var(--light-green);
+    border: var(--border);
+}
+.contact .icons-container .icon i{
+    font-size: 2rem;
+    color: white;
+    background: var(--green);
+    padding: 2.5rem;
+    border-radius: 50%;
+
+}
+.contact .icons-container .icon h3{
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+.contact .icons-container .icon p{
+    font-size: 1.5rem;
+}
+
+.contact .box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.contact .box-container .image{
+    flex : 1 1 40rem;
+}
+.contact .box-container .image img{
+    width: 100%;
+}
+.contact .box-container form{
+    flex: 1 1 40rem;
+
+    border: var(--border);
+    padding: 2rem;
+    text-align: center;
+    
+}
+.contact .box-container form h3{
+    font-size: 3rem;
+}
+.contact .box-container form .box{
+    border: var(--border);
+    padding: 1.5rem 2rem;
+    display: block;
+    width: 100%;
+    margin: 2rem 0;
+}
+.contact .box-container form .box:focus{
+    background: var(--green);
+}
+.contact .box-container form .btn{
+    
+
+}
+/****************************contact style end********************/
 /*****************************Footer style start************************/
 .footer{
    
