@@ -40,9 +40,20 @@ loginBtn.onclick = ()=>{
     registerForm.classList.remove('active')
 }
 
-
 const loadMoreBtn = document.querySelector('.load-more .btn')
 const box = document.querySelectorAll('.course .box-container .hide')
+
+
+
+const accordion = document.querySelectorAll('.faq .accordion-container .accordion')
+accordion.forEach(acco=>{
+    acco.onclick =()=>{
+        accordion.forEach(dion=>dion.classList.remove('active'))
+        acco.classList.toggle('active')
+    }
+})
+////accordion er code sobar niche rakhle kaj korena///////////////
+
 loadMoreBtn.onclick = ()=>{
     
     box.forEach(show=>{
@@ -51,6 +62,10 @@ loadMoreBtn.onclick = ()=>{
     box.style.display='none'
 
 }
+
+
+
+
 
 var swiper = new Swiper(".home-slider", {
     pagination: {

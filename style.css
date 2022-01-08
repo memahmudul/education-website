@@ -129,7 +129,7 @@ section{
     padding: 2rem;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -105%;
     z-index: 2000;
     background: #fff;
     height: 100%;
@@ -143,7 +143,7 @@ section{
     gap: 2rem;
 }
 .account-form.popup{
-    right: -105%;
+    right: 0;
 }
 .account-form .buttons .btn.active{
     background: var(--green);
@@ -605,6 +605,52 @@ section{
 
 }
 /****************************contact style end********************/
+/****************************faq style start********************/
+.faq{
+    min-height: 40vh;
+}
+.faq .accordion-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap : 2rem;
+
+}
+.faq .accordion-container .accordion{
+    flex : 1 1 60rem;
+    
+    border: var(--border);
+    cursor: pointer;
+}
+.faq .accordion-container .accordion.active .accordion-heading{
+    background: var(--green);
+    color: white
+}
+.faq .accordion-container .accordion.active .accordion-heading i{
+    color: white;
+}
+.faq .accordion-container .accordion.active .accordion-content{
+    display: block;
+}
+
+.faq .accordion-container .accordion .accordion-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    padding: 1.5rem;
+}
+.faq .accordion-container .accordion .accordion-heading i{
+    color: var(--green);
+}
+.faq .accordion-container .accordion .accordion-content{
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    border-top: var(--border);
+    display: none;
+}
+/****************************faq style end********************/
 /*****************************Footer style start************************/
 .footer{
    
